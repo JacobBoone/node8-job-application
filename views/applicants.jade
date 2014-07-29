@@ -5,4 +5,10 @@ block content
 	.container
 		h1 Applicants
 		ul#applications.list-unstyled
-			li Applicants should go here.
+			each applicant in applicants
+				h3 Name: #{applicant.name}
+				li Bio: #{applicant.bio}
+				li Skills: #{applicant.skills}
+				li Years: #{applicant.years}
+				li Why?: #{applicant.why}
+	
