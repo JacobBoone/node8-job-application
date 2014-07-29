@@ -1,5 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/omega3studios');
+
 
 var app = express();
 app.set('view engine', 'jade');
